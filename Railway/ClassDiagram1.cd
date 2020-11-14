@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Railway.ApplicationContext" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAACAAAAAAAAAEQAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Config\ApplicationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Authorization" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAABAQACAAAOAEAAKAAAQKAIRARTAAACAIAMIAYQA=</HashCode>
+      <FileName>Authorization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Manipulation" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>grGLrTNILzcRLTgnWJ+giBIGL8GNZUkFIWErDvQIQU4=</HashCode>
+      <FileName>Manipulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Railway">
+    <Position X="11.5" Y="4.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AiwAAAEACCAAADBECACCAAAGgAEEKAAAACAIAgAAQAE=</HashCode>
+      <FileName>Railway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Program" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Dao.PersonDaoImpl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABAAAAAAAAAAAAABAAAAAABAQAAAEAAAAABAAA=</HashCode>
+      <FileName>Dao\PersonDaoImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Railway.Dao.RailwayTicketDaoImpl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABAAAAAAAAAAAAABAAgAAABAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dao\RailwayTicketDaoImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Railway.Dao.TrainDaoImpl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABAAAAAAAAAAAAgBAAAAAABAQAAAAABAAAAAAA=</HashCode>
+      <FileName>Dao\TrainDaoImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Railway.Dao.TrainTypeDaoImpl" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABAAAAAAAAAAAAABAAAAAARAQAAAAAAAAACAAA=</HashCode>
+      <FileName>Dao\TrainTypeDaoImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Railway.Entity.Person" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAkgAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Entity\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Entity.RailwayTicket" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIQiAAAEAAAAAAMEAAAAkAAAAAAAAAACBAAAAAAAAAA=</HashCode>
+      <FileName>Entity\RailwayTicket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Entity.Train" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAEAAAAAAAAAAAAEAAAAAQAAAAAgAQgAAAAAAAg=</HashCode>
+      <FileName>Entity\Train.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Railway.Entity.TrainType" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQiAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\TrainType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Railway.Dao.Interfaces.Dao&lt;Type&gt;" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABAAAAAAAAAAAAABAAAAAABAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dao\Interfaces\Dao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Railway.Dao.Interfaces.PersonDao">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAA=</HashCode>
+      <FileName>Dao\Interfaces\PersonDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Railway.Dao.Interfaces.RailwayTicketDao">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dao\Interfaces\RailwayTicketDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Railway.Dao.Interfaces.TrainDao">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Dao\Interfaces\TrainDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Railway.Dao.Interfaces.TrainTypeDao">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Dao\Interfaces\TrainTypeDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
