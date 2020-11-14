@@ -88,10 +88,13 @@ namespace Railway {
 
             try {
                 table.DataSource = railwayTicketDao.CallProcedure("FindTicket", procedureArgument.Text.Split(' '));
+                chooseTable.SelectedIndex = -1;
                 MessageBox.Show("Хранимая процедура успешно выполнена!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } catch {
                 MessageBox.Show("Неверные аругменты для вызова хранимой процедуры", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            
         }
 
         private void AboutProcedure() {
@@ -146,6 +149,10 @@ namespace Railway {
                     case "Железнодорожные билеты": {
                         railwayTicketDao.Remove(Convert.ToInt32(deletingNumber.Value));
                         break;
+                    }
+                    default: {
+                        MessageBox.Show("Таблица не выбрана!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
                     }
                 }
 
