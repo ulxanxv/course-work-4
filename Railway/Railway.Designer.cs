@@ -34,6 +34,10 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.deletingNumber = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.procedureArgument = new System.Windows.Forms.TextBox();
+            this.procedureButton = new System.Windows.Forms.Button();
+            this.chooseTableLabel = new System.Windows.Forms.Label();
+            this.aboutProcedureButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.infoStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deletingNumber)).BeginInit();
@@ -85,10 +89,10 @@
             // 
             // addChangeButton
             // 
-            this.addChangeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.addChangeButton.Location = new System.Drawing.Point(687, 52);
+            this.addChangeButton.BackColor = System.Drawing.Color.Teal;
+            this.addChangeButton.Location = new System.Drawing.Point(544, 31);
             this.addChangeButton.Name = "addChangeButton";
-            this.addChangeButton.Size = new System.Drawing.Size(239, 60);
+            this.addChangeButton.Size = new System.Drawing.Size(294, 32);
             this.addChangeButton.TabIndex = 2;
             this.addChangeButton.Text = "Добавить/Изменить";
             this.addChangeButton.UseVisualStyleBackColor = false;
@@ -102,17 +106,17 @@
             "Поезда",
             "Типы поездов",
             "Железнодорожные билеты"});
-            this.chooseTable.Location = new System.Drawing.Point(687, 118);
+            this.chooseTable.Location = new System.Drawing.Point(955, 119);
             this.chooseTable.Name = "chooseTable";
-            this.chooseTable.Size = new System.Drawing.Size(239, 27);
+            this.chooseTable.Size = new System.Drawing.Size(217, 27);
             this.chooseTable.TabIndex = 3;
             // 
             // deleteButton
             // 
-            this.deleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.deleteButton.Location = new System.Drawing.Point(932, 70);
+            this.deleteButton.BackColor = System.Drawing.Color.Teal;
+            this.deleteButton.Location = new System.Drawing.Point(1081, 31);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(239, 43);
+            this.deleteButton.Size = new System.Drawing.Size(90, 32);
             this.deleteButton.TabIndex = 2;
             this.deleteButton.Text = "Удалить";
             this.deleteButton.UseVisualStyleBackColor = false;
@@ -120,14 +124,14 @@
             // deletingNumber
             // 
             this.deletingNumber.Font = new System.Drawing.Font("Consolas", 13.4F);
-            this.deletingNumber.Location = new System.Drawing.Point(932, 117);
+            this.deletingNumber.Location = new System.Drawing.Point(1081, 68);
             this.deletingNumber.Maximum = new decimal(new int[] {
             2147483647,
             0,
             0,
             0});
             this.deletingNumber.Name = "deletingNumber";
-            this.deletingNumber.Size = new System.Drawing.Size(239, 28);
+            this.deletingNumber.Size = new System.Drawing.Size(90, 28);
             this.deletingNumber.TabIndex = 4;
             this.deletingNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -136,12 +140,52 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(63, 52);
+            this.label1.Font = new System.Drawing.Font("Consolas", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(41, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 77);
+            this.label1.Size = new System.Drawing.Size(416, 58);
             this.label1.TabIndex = 5;
             this.label1.Text = "RAILWAY TICKETS";
+            // 
+            // procedureArgument
+            // 
+            this.procedureArgument.Location = new System.Drawing.Point(844, 68);
+            this.procedureArgument.Multiline = true;
+            this.procedureArgument.Name = "procedureArgument";
+            this.procedureArgument.Size = new System.Drawing.Size(212, 27);
+            this.procedureArgument.TabIndex = 6;
+            this.procedureArgument.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // procedureButton
+            // 
+            this.procedureButton.BackColor = System.Drawing.Color.Teal;
+            this.procedureButton.Location = new System.Drawing.Point(844, 31);
+            this.procedureButton.Name = "procedureButton";
+            this.procedureButton.Size = new System.Drawing.Size(173, 32);
+            this.procedureButton.TabIndex = 7;
+            this.procedureButton.Text = "Вызов процедуры";
+            this.procedureButton.UseVisualStyleBackColor = false;
+            // 
+            // chooseTableLabel
+            // 
+            this.chooseTableLabel.AutoSize = true;
+            this.chooseTableLabel.BackColor = System.Drawing.Color.Teal;
+            this.chooseTableLabel.ForeColor = System.Drawing.Color.Black;
+            this.chooseTableLabel.Location = new System.Drawing.Point(949, 107);
+            this.chooseTableLabel.Name = "chooseTableLabel";
+            this.chooseTableLabel.Size = new System.Drawing.Size(126, 19);
+            this.chooseTableLabel.TabIndex = 8;
+            this.chooseTableLabel.Text = "Выбор таблицы";
+            // 
+            // aboutProcedureButton
+            // 
+            this.aboutProcedureButton.BackColor = System.Drawing.Color.Teal;
+            this.aboutProcedureButton.Location = new System.Drawing.Point(1023, 31);
+            this.aboutProcedureButton.Name = "aboutProcedureButton";
+            this.aboutProcedureButton.Size = new System.Drawing.Size(33, 32);
+            this.aboutProcedureButton.TabIndex = 9;
+            this.aboutProcedureButton.Text = "?";
+            this.aboutProcedureButton.UseVisualStyleBackColor = false;
             // 
             // Railway
             // 
@@ -149,6 +193,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this.aboutProcedureButton);
+            this.Controls.Add(this.chooseTableLabel);
+            this.Controls.Add(this.procedureButton);
+            this.Controls.Add(this.procedureArgument);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.deletingNumber);
             this.Controls.Add(this.chooseTable);
@@ -186,6 +234,10 @@
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.NumericUpDown deletingNumber;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox procedureArgument;
+        private System.Windows.Forms.Button procedureButton;
+        private System.Windows.Forms.Label chooseTableLabel;
+        private System.Windows.Forms.Button aboutProcedureButton;
     }
 }
 

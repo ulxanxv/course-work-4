@@ -1,6 +1,8 @@
-﻿using Railway.Dao.Interfaces;
+﻿using Microsoft.EntityFrameworkCore.Internal;
+using Railway.Dao.Interfaces;
 using Railway.Entity;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity.Core;
 using System.Data.Entity.Infrastructure;
@@ -32,7 +34,16 @@ namespace Railway.Dao {
             }
         }
 
+        public List<RailwayTicket> CallProcedure(string procedureName, string[] arguments) {
 
+            arguments.Select(x => x.Trim());
+
+            using (ApplicationContext context = new ApplicationContext()) {
+                return context.RailwayTickets
+                    .SqlQuery(string.Format("EXEC {0} {1}", procedureName, arguments.Join(", ")))
+                    .ToList();
+            }
+        }
 
         public RailwayTicket FindById(long id) {
 

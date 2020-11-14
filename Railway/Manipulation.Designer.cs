@@ -283,7 +283,7 @@
             // 
             // changePersonButton
             // 
-            this.changePersonButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.changePersonButton.BackColor = System.Drawing.Color.Teal;
             this.changePersonButton.Location = new System.Drawing.Point(229, 263);
             this.changePersonButton.Name = "changePersonButton";
             this.changePersonButton.Size = new System.Drawing.Size(164, 46);
@@ -302,7 +302,7 @@
             // 
             // addPersonButton
             // 
-            this.addPersonButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.addPersonButton.BackColor = System.Drawing.Color.Teal;
             this.addPersonButton.Location = new System.Drawing.Point(229, 211);
             this.addPersonButton.Name = "addPersonButton";
             this.addPersonButton.Size = new System.Drawing.Size(164, 46);
@@ -402,7 +402,7 @@
             // 
             // changeTrainButton
             // 
-            this.changeTrainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.changeTrainButton.BackColor = System.Drawing.Color.Teal;
             this.changeTrainButton.Location = new System.Drawing.Point(238, 263);
             this.changeTrainButton.Name = "changeTrainButton";
             this.changeTrainButton.Size = new System.Drawing.Size(164, 46);
@@ -432,7 +432,7 @@
             // 
             // addTrainButton
             // 
-            this.addTrainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.addTrainButton.BackColor = System.Drawing.Color.Teal;
             this.addTrainButton.Location = new System.Drawing.Point(238, 211);
             this.addTrainButton.Name = "addTrainButton";
             this.addTrainButton.Size = new System.Drawing.Size(164, 46);
@@ -579,7 +579,7 @@
             // 
             // changeTypeButton
             // 
-            this.changeTypeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.changeTypeButton.BackColor = System.Drawing.Color.Teal;
             this.changeTypeButton.Location = new System.Drawing.Point(238, 135);
             this.changeTypeButton.Name = "changeTypeButton";
             this.changeTypeButton.Size = new System.Drawing.Size(164, 46);
@@ -589,7 +589,7 @@
             // 
             // addTypeButton
             // 
-            this.addTypeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.addTypeButton.BackColor = System.Drawing.Color.Teal;
             this.addTypeButton.Location = new System.Drawing.Point(238, 83);
             this.addTypeButton.Name = "addTypeButton";
             this.addTypeButton.Size = new System.Drawing.Size(164, 46);
@@ -755,7 +755,7 @@
             // 
             // changeRailwayTicketButton
             // 
-            this.changeRailwayTicketButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.changeRailwayTicketButton.BackColor = System.Drawing.Color.Teal;
             this.changeRailwayTicketButton.Location = new System.Drawing.Point(238, 391);
             this.changeRailwayTicketButton.Name = "changeRailwayTicketButton";
             this.changeRailwayTicketButton.Size = new System.Drawing.Size(164, 46);
@@ -784,7 +784,7 @@
             // 
             // addRailwayTicketButton
             // 
-            this.addRailwayTicketButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.addRailwayTicketButton.BackColor = System.Drawing.Color.Teal;
             this.addRailwayTicketButton.Location = new System.Drawing.Point(238, 339);
             this.addRailwayTicketButton.Name = "addRailwayTicketButton";
             this.addRailwayTicketButton.Size = new System.Drawing.Size(164, 46);

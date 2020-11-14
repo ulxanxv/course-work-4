@@ -29,14 +29,27 @@ namespace Railway {
 
             deleteButton.Click                  += DeleteButton_Click;
             addChangeButton.Click               += AddChangeButton_Click;
+
+            procedureButton.Click               += ProcedureButton_Click;
+            aboutProcedureButton.Click          += AboutProcedureButton_Click;
+        }
+
+        private void AboutProcedureButton_Click(object sender, EventArgs e) {
+            AboutProcedure();
+        }
+
+        private void ProcedureButton_Click(object sender, EventArgs e) {
+            CallProcedure();
         }
 
         private void Table_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+
             if (e.RowIndex == -1) { return; }
             ChangeRow();
         }
 
         private void AddChangeButton_Click(object sender, EventArgs e) {
+
             try {
                 ShowManipulationForm();
             } catch (DataException) {
@@ -45,6 +58,7 @@ namespace Railway {
         }
 
         private void DeleteButton_Click(object sender, EventArgs e) {
+
             try {
                 DeleteRow();
             } catch (DataException) {
@@ -53,6 +67,7 @@ namespace Railway {
         }
 
         private void Table_CellClick(object sender, DataGridViewCellEventArgs e) {
+
             try {
                 DeletingNumberUpdate(e);
             } catch (DataException) {
@@ -61,6 +76,7 @@ namespace Railway {
         }
 
         private void ChooseTable_SelectedValueChanged(object sender, EventArgs e) {
+
             try {
                 LoadTable();
             } catch (DataException) {
@@ -68,7 +84,23 @@ namespace Railway {
             }
         }
 
+        private void CallProcedure() {
+
+            try {
+                table.DataSource = railwayTicketDao.CallProcedure("FindTicket", procedureArgument.Text.Split(' '));
+                MessageBox.Show("Хранимая процедура успешно выполнена!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } catch {
+                MessageBox.Show("Неверные аругменты для вызова хранимой процедуры", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void AboutProcedure() {
+
+            MessageBox.Show("Данная хранимая процедура выполняет поиск билетов по введенному пункту прибытия поездов!", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void ChangeRow() {
+
             new Manipulation(chooseTable.Text, Convert.ToInt32(deletingNumber.Value)).ShowDialog();
         }
 
@@ -129,10 +161,12 @@ namespace Railway {
         }
 
         private void ShowManipulationForm() {
+
             new Manipulation().ShowDialog();
         }
 
         private void DeletingNumberUpdate(DataGridViewCellEventArgs e) {
+
             if (e.RowIndex == -1) { return; }
             deletingNumber.Value = Convert.ToDecimal(table.Rows[e.RowIndex].Cells[0].Value);
         }
