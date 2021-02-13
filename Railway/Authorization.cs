@@ -47,7 +47,7 @@ namespace Railway {
                 databaseNameField.Text = "";
             } else {
                 databaseNameField.Enabled = false;
-                databaseNameField.Text = "corsew";
+                databaseNameField.Text = "somedb";
             }
         }
 
@@ -125,7 +125,7 @@ namespace Railway {
         /// Run main window after auth
         /// </summary>
         private void RunMainWindow() {
-            new Railway().Show();
+            new SGroup().Show();
             Close();
         }
 

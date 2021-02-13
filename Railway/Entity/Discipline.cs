@@ -4,25 +4,24 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Railway.Entity {
 
-    [Table("TrainType")]
-    public class TrainType {
+    [Table("Discipline")]
+    public class Discipline {
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public virtual ICollection<Train> Trains { get; set; }
+        public virtual ICollection<StudentPerformance> StudentPerformances { get; set; }
 
         [Required]
-        [StringLength(50)]
-        [Index(IsUnique = true)]
         public string Name { get; set; }
 
-        public TrainType Update {
+        public Discipline Update {
             set {
                 Name = value.Name;
             }
         }
 
     }
+
 }

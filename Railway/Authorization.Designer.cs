@@ -46,36 +46,42 @@
             // 
             // authWithCredentialButton
             // 
-            this.authWithCredentialButton.BackColor = System.Drawing.Color.White;
-            this.authWithCredentialButton.Location = new System.Drawing.Point(13, 399);
+            this.authWithCredentialButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.authWithCredentialButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.authWithCredentialButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.authWithCredentialButton.ForeColor = System.Drawing.Color.White;
+            this.authWithCredentialButton.Location = new System.Drawing.Point(13, 411);
             this.authWithCredentialButton.Margin = new System.Windows.Forms.Padding(4);
             this.authWithCredentialButton.Name = "authWithCredentialButton";
-            this.authWithCredentialButton.Size = new System.Drawing.Size(170, 60);
+            this.authWithCredentialButton.Size = new System.Drawing.Size(170, 48);
             this.authWithCredentialButton.TabIndex = 0;
             this.authWithCredentialButton.Text = "Войти по учетным данным";
             this.authWithCredentialButton.UseVisualStyleBackColor = false;
             // 
             // loginFeild
             // 
-            this.loginFeild.Location = new System.Drawing.Point(58, 139);
+            this.loginFeild.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.loginFeild.Location = new System.Drawing.Point(60, 139);
             this.loginFeild.Margin = new System.Windows.Forms.Padding(4);
             this.loginFeild.Name = "loginFeild";
-            this.loginFeild.Size = new System.Drawing.Size(273, 26);
+            this.loginFeild.Size = new System.Drawing.Size(273, 25);
             this.loginFeild.TabIndex = 1;
             this.loginFeild.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // passwordField
             // 
-            this.passwordField.Location = new System.Drawing.Point(58, 208);
+            this.passwordField.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.passwordField.Location = new System.Drawing.Point(60, 208);
             this.passwordField.Margin = new System.Windows.Forms.Padding(4);
             this.passwordField.Name = "passwordField";
             this.passwordField.PasswordChar = '*';
-            this.passwordField.Size = new System.Drawing.Size(273, 26);
+            this.passwordField.Size = new System.Drawing.Size(273, 25);
             this.passwordField.TabIndex = 1;
             this.passwordField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // infoStrip
             // 
+            this.infoStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.infoStrip.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.infoStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.autorName,
@@ -84,15 +90,17 @@
             this.infoStrip.Location = new System.Drawing.Point(0, 0);
             this.infoStrip.Name = "infoStrip";
             this.infoStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.infoStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.infoStrip.Size = new System.Drawing.Size(390, 25);
             this.infoStrip.TabIndex = 3;
             this.infoStrip.Text = "toolStrip1";
             // 
             // autorName
             // 
+            this.autorName.ForeColor = System.Drawing.Color.White;
             this.autorName.Name = "autorName";
-            this.autorName.Size = new System.Drawing.Size(91, 22);
-            this.autorName.Text = "Ульянов А.В.";
+            this.autorName.Size = new System.Drawing.Size(210, 22);
+            this.autorName.Text = "Ульянов А.В. и Аюбджанов Е.К.";
             // 
             // aboutInfoSeparator
             // 
@@ -101,6 +109,7 @@
             // 
             // autorGroup
             // 
+            this.autorGroup.ForeColor = System.Drawing.Color.White;
             this.autorGroup.Name = "autorGroup";
             this.autorGroup.Size = new System.Drawing.Size(63, 22);
             this.autorGroup.Text = "ПКсп-117";
@@ -108,8 +117,9 @@
             // loginLabel
             // 
             this.loginLabel.AutoSize = true;
-            this.loginLabel.BackColor = System.Drawing.Color.Teal;
-            this.loginLabel.Location = new System.Drawing.Point(168, 116);
+            this.loginLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.loginLabel.ForeColor = System.Drawing.Color.White;
+            this.loginLabel.Location = new System.Drawing.Point(170, 116);
             this.loginLabel.Name = "loginLabel";
             this.loginLabel.Size = new System.Drawing.Size(54, 19);
             this.loginLabel.TabIndex = 4;
@@ -118,8 +128,9 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.BackColor = System.Drawing.Color.Teal;
-            this.passwordLabel.Location = new System.Drawing.Point(163, 185);
+            this.passwordLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.passwordLabel.ForeColor = System.Drawing.Color.White;
+            this.passwordLabel.Location = new System.Drawing.Point(165, 185);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(63, 19);
             this.passwordLabel.TabIndex = 4;
@@ -128,9 +139,10 @@
             // authLabel
             // 
             this.authLabel.AutoSize = true;
-            this.authLabel.BackColor = System.Drawing.Color.Teal;
+            this.authLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.authLabel.Font = new System.Drawing.Font("Consolas", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.authLabel.Location = new System.Drawing.Point(48, 25);
+            this.authLabel.ForeColor = System.Drawing.Color.White;
+            this.authLabel.Location = new System.Drawing.Point(41, 25);
             this.authLabel.Name = "authLabel";
             this.authLabel.Size = new System.Drawing.Size(310, 56);
             this.authLabel.TabIndex = 4;
@@ -138,11 +150,14 @@
             // 
             // authWithWindowsButton
             // 
-            this.authWithWindowsButton.BackColor = System.Drawing.Color.White;
-            this.authWithWindowsButton.Location = new System.Drawing.Point(196, 399);
+            this.authWithWindowsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.authWithWindowsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.authWithWindowsButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.authWithWindowsButton.ForeColor = System.Drawing.Color.White;
+            this.authWithWindowsButton.Location = new System.Drawing.Point(196, 411);
             this.authWithWindowsButton.Margin = new System.Windows.Forms.Padding(4);
             this.authWithWindowsButton.Name = "authWithWindowsButton";
-            this.authWithWindowsButton.Size = new System.Drawing.Size(181, 60);
+            this.authWithWindowsButton.Size = new System.Drawing.Size(181, 48);
             this.authWithWindowsButton.TabIndex = 0;
             this.authWithWindowsButton.Text = "Войти через Windows";
             this.authWithWindowsButton.UseVisualStyleBackColor = false;
@@ -150,21 +165,23 @@
             // databaseNameField
             // 
             this.databaseNameField.Enabled = false;
-            this.databaseNameField.Location = new System.Drawing.Point(58, 278);
+            this.databaseNameField.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.databaseNameField.Location = new System.Drawing.Point(60, 278);
             this.databaseNameField.Margin = new System.Windows.Forms.Padding(4);
             this.databaseNameField.Name = "databaseNameField";
-            this.databaseNameField.Size = new System.Drawing.Size(273, 26);
+            this.databaseNameField.Size = new System.Drawing.Size(273, 25);
             this.databaseNameField.TabIndex = 1;
-            this.databaseNameField.Text = "coursew";
+            this.databaseNameField.Text = "somedb";
             this.databaseNameField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // serverNameField
             // 
             this.serverNameField.Enabled = false;
-            this.serverNameField.Location = new System.Drawing.Point(58, 347);
+            this.serverNameField.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.serverNameField.Location = new System.Drawing.Point(60, 347);
             this.serverNameField.Margin = new System.Windows.Forms.Padding(4);
             this.serverNameField.Name = "serverNameField";
-            this.serverNameField.Size = new System.Drawing.Size(273, 26);
+            this.serverNameField.Size = new System.Drawing.Size(273, 25);
             this.serverNameField.TabIndex = 1;
             this.serverNameField.Text = "DESKTOP-KJBH8PO\\SQLEXPRESS";
             this.serverNameField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -172,8 +189,9 @@
             // databaseNameLabel
             // 
             this.databaseNameLabel.AutoSize = true;
-            this.databaseNameLabel.BackColor = System.Drawing.Color.Teal;
-            this.databaseNameLabel.Location = new System.Drawing.Point(145, 255);
+            this.databaseNameLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.databaseNameLabel.ForeColor = System.Drawing.Color.White;
+            this.databaseNameLabel.Location = new System.Drawing.Point(142, 255);
             this.databaseNameLabel.Name = "databaseNameLabel";
             this.databaseNameLabel.Size = new System.Drawing.Size(108, 19);
             this.databaseNameLabel.TabIndex = 4;
@@ -182,8 +200,9 @@
             // serverNameLabel
             // 
             this.serverNameLabel.AutoSize = true;
-            this.serverNameLabel.BackColor = System.Drawing.Color.Teal;
-            this.serverNameLabel.Location = new System.Drawing.Point(145, 324);
+            this.serverNameLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.serverNameLabel.ForeColor = System.Drawing.Color.White;
+            this.serverNameLabel.Location = new System.Drawing.Point(142, 324);
             this.serverNameLabel.Name = "serverNameLabel";
             this.serverNameLabel.Size = new System.Drawing.Size(108, 19);
             this.serverNameLabel.TabIndex = 4;
@@ -211,7 +230,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(390, 472);
             this.Controls.Add(this.activateDatabaseName);
             this.Controls.Add(this.activateServerName);
@@ -235,7 +254,7 @@
             this.MinimumSize = new System.Drawing.Size(406, 511);
             this.Name = "Authorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Авторизация";
+            this.Text = "SGroup | Авторизация";
             this.infoStrip.ResumeLayout(false);
             this.infoStrip.PerformLayout();
             this.ResumeLayout(false);

@@ -1,6 +1,5 @@
 ﻿using Railway.Entity;
 using System.Data.Entity;
-using System.Data.SqlClient;
 
 namespace Railway {
 
@@ -10,24 +9,11 @@ namespace Railway {
             this.Database.CreateIfNotExists();
         }
 
-        public DbSet<Train> Trains { get; set; }
-        public DbSet<TrainType> TrainTypes { get; set; }
-        public DbSet<Person> Persons { get; set; }
-        public DbSet<RailwayTicket> RailwayTickets { get; set; }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder) {
-
-            modelBuilder.Entity<Person>()
-                .HasIndex(p => new { p.PassportSeries, p.PassportId })
-                .IsUnique();
-
-            modelBuilder.Entity<RailwayTicket>()
-                .HasIndex(p => new { p.CarriageNumber, p.SeatOfCarriage })
-                .IsUnique();
-
-        }
-
-
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Parent> Parents { get; set; }
+        public DbSet<Discipline> Disciplines { get; set; }
+        public DbSet<StudentParent> StudentParents { get; set; }
+        public DbSet<StudentPerformance> StudentPerformances { get; set; }
 
     }
 }

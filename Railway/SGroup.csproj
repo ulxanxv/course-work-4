@@ -134,30 +134,33 @@
       <DependentUpon>Authorization.cs</DependentUpon>
     </Compile>
     <Compile Include="Config\ApplicationContext.cs" />
-    <Compile Include="Dao\Interfaces\Dao.cs" />
-    <Compile Include="Dao\Interfaces\PersonDao.cs" />
-    <Compile Include="Dao\Interfaces\RailwayTicketDao.cs" />
-    <Compile Include="Dao\Interfaces\TrainDao.cs" />
-    <Compile Include="Dao\Interfaces\TrainTypeDao.cs" />
-    <Compile Include="Dao\PersonDaoImpl.cs" />
-    <Compile Include="Dao\RailwayTicketDaoImpl.cs" />
-    <Compile Include="Dao\TrainDaoImpl.cs" />
-    <Compile Include="Dao\TrainTypeDaoImpl.cs" />
-    <Compile Include="Entity\Person.cs" />
-    <Compile Include="Entity\RailwayTicket.cs" />
-    <Compile Include="Entity\Train.cs" />
-    <Compile Include="Entity\TrainType.cs" />
+    <Compile Include="Dao\Dao.cs" />
+    <Compile Include="Dao\DisciplineDao.cs" />
+    <Compile Include="Dao\Impl\DisciplineDaoImpl.cs" />
+    <Compile Include="Dao\Impl\ParentDaoImpl.cs" />
+    <Compile Include="Dao\Impl\StudentDaoImpl.cs" />
+    <Compile Include="Dao\Impl\StudentParentDaoImpl.cs" />
+    <Compile Include="Dao\Impl\StudentPerformanceDaoImpl.cs" />
+    <Compile Include="Dao\ParentDao.cs" />
+    <Compile Include="Dao\StudentDao.cs" />
+    <Compile Include="Dao\StudentParentDao.cs" />
+    <Compile Include="Dao\StudentPerformanceDao.cs" />
+    <Compile Include="Entity\Discipline.cs" />
+    <Compile Include="Entity\Parent.cs" />
+    <Compile Include="Entity\Student.cs" />
+    <Compile Include="Entity\StudentParent.cs" />
+    <Compile Include="Entity\StudentPerformance.cs" />
     <Compile Include="Manipulation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Manipulation.Designer.cs">
       <DependentUpon>Manipulation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Railway.cs">
+    <Compile Include="SGroup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Railway.Designer.cs">
-      <DependentUpon>Railway.cs</DependentUpon>
+    <Compile Include="SGroup.Designer.cs">
+      <DependentUpon>SGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,10 +179,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Railway.resx">
-      <DependentUpon>Railway.cs</DependentUpon>
+    <EmbeddedResource Include="SGroup.resx">
+      <DependentUpon>SGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -196,7 +198,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Icons\" />
-    <Folder Include="Migration\SQL-scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
